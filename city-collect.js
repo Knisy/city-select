@@ -1,0 +1,1 @@
+$.each(area,function(i,n){  if(/\d{2}0000/.test(i)){ console.log(i); area[i]={pid:0,name:area[i]}; }else if(/\d{4}00/.test(i)){  area[i]={pid:(i.substr(0,2))+'0000',name:area[i]}; }else{ area[i]={pid:(i.substr(0,4))+'00',name:area[i]};    }   });console.log(area);
